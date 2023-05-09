@@ -13,11 +13,11 @@ Adopt A Pet is an app created to test my understanding of React Router. Specific
 
 ### Learning objectives:
 
-- Implement a router using React Router
-- Add static and dynamic routing to the application
-- Define and use query parameters to filter content (useParams)
-- Implement a search feature (useSearchParams)
-- Redirect users (useNavigate)
+- Implement a router using React Router **(Route, RouterProvider, createBrowserRouter, createRoutesFromElements)**
+- Add static and dynamic routing to the application **(Link)**
+- Define and use query parameters to filter content **(useParams)**
+- Implement a search feature **(useSearchParams)**
+- Redirect users **(useNavigate)**
 
 This app uses Mock Service Worker (MSW) to replicate the functionality of an external API. To use MSW, you’ll want to use Google Chrome and enable third-party cookies.
 
