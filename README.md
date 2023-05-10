@@ -30,7 +30,7 @@ Clicked on a pet to see more details
 ![Pet details page](https://github.com/jogit82/adopt-a-pet-react-router/blob/master/Screenshot%202023-05-09%20at%205.18.53%20PM.png?raw=true)
 
 Search result automatically redirect to pet details page matching search query
-![Search result automatically redirect to pet details page matching search query] (https://github.com/jogit82/adopt-a-pet-react-router/blob/master/Screenshot%202023-05-09%20at%205.19.03%20PM.png?raw=true)
+![Search result automatically redirect to pet details page matching search query](https://github.com/jogit82/adopt-a-pet-react-router/blob/master/Screenshot%202023-05-09%20at%205.19.03%20PM.png?raw=true)
 
 # Getting Started with Create React App
 
