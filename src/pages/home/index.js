@@ -1,14 +1,13 @@
-import React, { useEffect, useState } from 'react';
-import { getPets } from '../../api/petfinder';
-import Hero from '../../components/hero';
-
-// import useParams
-// import Link
+import React, { useEffect, useState } from "react";
+import { getPets } from "../../api/petfinder";
+import Hero from "../../components/hero";
+import { Link, useParams } from "react-router-dom";
 
 const HomePage = () => {
   const [data, setData] = useState(null);
-  const type = ''; // Fix me!
+  const { type } = useParams(); // Object deconstruction
 
+  // Inside the useEffect() hook, we’ve passed type to our API’s getPets method which fetches pets of the specified type to be rendered on the page. Now, this type comes from the URL parameter (rather than an empty string)
   useEffect(() => {
     async function getPetsData() {
       const petsData = await getPets(type);
@@ -26,16 +25,16 @@ const HomePage = () => {
     <div className="page">
       <Hero />
       <h3>
-        <span className="pet-type-label">{type ? `${type}s` : 'Pets'}</span>{' '}
+        <span className="pet-type-label">{type ? `${type}s` : "Pets"}</span>{" "}
         available for adoption near you
       </h3>
 
       {data.length ? (
         <div className="grid">
           {data.map((animal) => (
-            <a // Change me to a Link!
+            <Link
               key={animal.id}
-              href={`/${animal.type.toLowerCase()}/${animal.id}`}
+              to={`/${animal.type.toLowerCase()}/${animal.id}`}
               className="pet"
             >
               <article>
@@ -43,10 +42,7 @@ const HomePage = () => {
                   {
                     <img
                       className="pet-image"
-                      src={
-                        animal.photos[0]?.medium ||
-                        '/missing-animal.png'
-                      }
+                      src={animal.photos[0]?.medium || "/missing-animal.png"}
                       alt=""
                     />
                   }
@@ -56,7 +52,7 @@ const HomePage = () => {
                 <p>Color: {animal.colors.primary}</p>
                 <p>Gender: {animal.gender}</p>
               </article>
-            </a> // Don't forget to change me!
+            </Link>
           ))}
         </div>
       ) : (

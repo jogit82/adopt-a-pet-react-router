@@ -1,6 +1,6 @@
 # adopt-a-pet-react-router
 
-Adopt A Pet is an app created to test my understanding of React Router. Specifically, this is a pet adoption website that allows users to view all the animals of a particular species and view the profiles of specific animals.
+Adopt A Pet is an app created to test my understanding of React Router. You should be familiar with object deconstruction in JavaScript. Specifically, this is a pet adoption website that allows users to view all the animals of a particular species and view the profiles of specific animals.
 
 ### App's functionality:
 
@@ -20,6 +20,17 @@ Adopt A Pet is an app created to test my understanding of React Router. Specific
 - Redirect users **(useNavigate)**
 
 This app uses Mock Service Worker (MSW) to replicate the functionality of an external API. To use MSW, you’ll want to use Google Chrome and enable third-party cookies.
+
+### Screenshots of finished app
+
+Homepage
+![Homepage](https://github.com/jogit82/adopt-a-pet-react-router/blob/master/Screenshot%202023-05-09%20at%205.18.46%20PM.png?raw=true)
+
+Clicked on a pet to see more details
+![Pet details page](https://github.com/jogit82/adopt-a-pet-react-router/blob/master/Screenshot%202023-05-09%20at%205.18.53%20PM.png?raw=true)
+
+Search result automatically redirect to pet details page matching search query
+![Search result automatically redirect to pet details page matching search query] (https://github.com/jogit82/adopt-a-pet-react-router/blob/master/Screenshot%202023-05-09%20at%205.19.03%20PM.png?raw=true)
 
 # Getting Started with Create React App
 
